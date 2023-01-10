@@ -1,0 +1,90 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-vmware-tanzu-se
+  description: This is the team that develops the inclusion app
+spec:
+  type: team
+  profile:
+    displayName: The VMware Tanzu SE team
+    email: inclusive-dev-team@vmware.com
+    picture: https://blogs.vmware.com/cloudprovider/files/2021/09/logo-vmware-tanzu-square-Header.png
+  parent: vmware-tanzu-bu
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: user
+spec:
+  profile:
+    displayName: Dev User
+    email: devuser@team.com
+    picture: https://pbs.twimg.com/profile_images/1235868806079057921/fTL08u_H_400x400.png
+  memberOf: [team-vmware-tanzu-se]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: fred
+spec:
+  profile:
+    displayName: Frederic KLEIN
+    email: kfrederic@vmware.com
+    picture: https://pbs.twimg.com/profile_images/1069395220788318208/Ot2sB25D_400x400.jpg
+  memberOf: [team-vmware-tanzu-se]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: hichem
+spec:
+  profile:
+    displayName: Hichem BENAMARA
+    email: hbenamara@vmware.com
+    picture: https://media.licdn.com/dms/image/C4E03AQH_JRvwrIKBiQ/profile-displayphoto-shrink_800_800/0/1517733395659?e=1678320000&v=beta&t=r_JNy2K654qXG4W7npvizJOBE2uyde8EABUw9QYyzwI
+  memberOf: [team-vmware-tanzu-se]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: elie
+spec:
+  profile:
+    displayName: Elie MORAEL
+    email: emorael@vmware.com
+    picture: https://media.licdn.com/dms/image/C4E03AQFefLQjKt5Zbw/profile-displayphoto-shrink_200_200/0/1641508845334?e=1678320000&v=beta&t=4If4qiJjbqNBMq_mm6Djga8ZtfAQ5hz6FexOKTcTn3o
+  memberOf: [team-vmware-tanzu-se]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: farid
+spec:
+  profile:
+    displayName: Farid BENREJDAL
+    email: fbenrejdal@vmware.com
+    picture: https://media.licdn.com/dms/image/C4E03AQHQl0r8ZpdnfA/profile-displayphoto-shrink_800_800/0/1527705606794?e=1678320000&v=beta&t=4Ln3xegoxGqmZdXc6mfqg1FPNvMipVrwqhF5g8Ijee8
+  memberOf: [team-vmware-tanzu-se]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: fabien
+spec:
+  profile:
+    displayName: Fabien MARTIN
+    email: fmartin@vmware.com
+    picture: https://media.licdn.com/dms/image/D4E03AQE0gkwocKb0FA/profile-displayphoto-shrink_800_800/0/1667407460213?e=1678320000&v=beta&t=_8jGsiwK70qxfc6KmY34nG3rL83W57CTF2CqRizmxaw
+  memberOf: [team-vmware-tanzu-se]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: julien
+spec:
+  profile:
+    displayName: Julien KOLARIC
+    email: jkolaric@vmware.com
+    picture: https://media.licdn.com/dms/image/C4E03AQEKoZFQAJqqeQ/profile-displayphoto-shrink_800_800/0/1644327309724?e=1678320000&v=beta&t=3xzSP-bY1c_6ZRBlHT4h5iGYXZywKK7ukse7cb1PPDY
+  memberOf: [team-vmware-tanzu-se]

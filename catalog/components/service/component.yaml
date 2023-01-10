@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: inclusion
+  description: Service collecting all emojis
+  tags:
+    - inclusion
+    - node
+    - express
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=inclusion-node-portal'
+    'backstage.io/techdocs-ref': dir:.
+  links:
+    - url: https://nodejs.org/
+      title: Node.js® is an open-source, cross-platform JavaScript runtime environment.
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-vmware-tanzu-se
+  system: emoji-world

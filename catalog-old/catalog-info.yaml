@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: inclusion-portal
+  description: FrontEnd for Inclusion App
+  tags:
+    - inclusion
+    - node
+    - express
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=inclusion-node-portal'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-vmware-tanzu-se
