@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: inclusion
+  name: inclusion-portal
   description: Service collecting all emojis
   tags:
     - inclusion
@@ -18,4 +18,4 @@ spec:
   type: service
   lifecycle: experimental
   owner: team-vmware-tanzu-se
-  system: emoji-world
+  system: emoji-portal
