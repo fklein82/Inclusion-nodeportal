@@ -25,3 +25,5 @@ k8s_custom_deploy(
 
 k8s_resource('node-function', port_forwards=["8080:8080"],
     extra_pod_selectors=[{'serving.knative.dev/service': 'node-function'}])
+
+allow_k8s_contexts('tap-demo1-3')
