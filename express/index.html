@@ -1,237 +1,872 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
-<body>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Malagasy, SaryCom, SayCom Films, VoD, Tanamania, Ilo Aina, Anay">
+    <meta name="description" content="Plateforme VOD pour les Films et les Séries Malgaches de SaryCom Films : Anay, Ilo Aina, Tanamania...">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="SaryCom Group">
+    <meta property="og:title" content="SaryCom Films">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sarycom.fr">
+    <meta property="og:description" content="Plateforme VOD pour les Films et les Séries Malgaches de SaryCom Films : Anay, Ilo Aina, Tanamania..." >
+    <meta property="og:image" content="http://sarycom.fr.s3-website.eu-west-3.amazonaws.com/img/bg1.jpg">
+    <title>SaryCom Films</title>
 
-    <!-- Navbar -->
-    <div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-        <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-        <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-            <a href="#" class="w3-bar-item w3-button">Extras</a>
-            <a href="#" class="w3-bar-item w3-button">Media</a>
-        </div>
-        </div>
-        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    <link rel="icon" type="image/png" href="img/features/favicon.ico" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap3.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/menu_sideslide.css">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Awesome Font -->
+    <script src="https://kit.fontawesome.com/ef192fde9d.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
     </div>
-    </div>
-
-    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-    </div>
-
-    <!-- Page content -->
-    <div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-    <!-- Automatic Slideshow Images -->
-    <div class="mySlides w3-display-container w3-center">
-        <img src="https://www.w3schools.com/w3images/la.jpg" style="width:100%">
-        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>Los Angeles</h3>
-        <p><b>We had the best time playing at Venice Beach!</b></p>   
-        </div>
-    </div>
-    <div class="mySlides w3-display-container w3-center">
-        <img src="https://www.w3schools.com/w3images/ny.jpg" style="width:100%">
-        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>New York</h3>
-        <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
-        </div>
-    </div>
-    <div class="mySlides w3-display-container w3-center">
-        <img src="https://www.w3schools.com/w3images/chicago.jpg" style="width:100%">
-        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>Chicago</h3>
-        <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
-        </div>
-    </div>
-
-    <!-- The Band Section -->
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-        <h2 class="w3-wide">THE BAND</h2>
-        <p class="w3-opacity"><i>We love music</i></p>
-        <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <div class="w3-row w3-padding-32">
-        <div class="w3-third">
-            <p>Name</p>
-            <img src="https://www.w3schools.com/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-        </div>
-        <div class="w3-third">
-            <p>Name</p>
-            <img src="https://www.w3schools.com/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-        </div>
-        <div class="w3-third">
-            <p>Name</p>
-            <img src="https://www.w3schools.com/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-        </div>
-        </div>
-    </div>
-
-    <!-- The Tour Section -->
-    <div class="w3-black" id="tour">
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-        <h2 class="w3-wide w3-center">TOUR DATES</h2>
-        <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-
-        <ul class="w3-ul w3-border w3-white w3-text-grey">
-            <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-            <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-            <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-        </ul>
-
-        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-            <div class="w3-third w3-margin-bottom">
-            <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-                <p><b>New York</b></p>
-                <p class="w3-opacity">Fri 27 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-            </div>
-            </div>
-            <div class="w3-third w3-margin-bottom">
-            <img src="https://www.w3schools.com/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-                <p><b>Paris</b></p>
-                <p class="w3-opacity">Sat 28 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-            </div>
-            </div>
-            <div class="w3-third w3-margin-bottom">
-            <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-                <p><b>San Francisco</b></p>
-                <p class="w3-opacity">Sun 29 Nov 2016</p>
-                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-
-    <!-- Ticket Modal -->
-    <div id="ticketModal" class="w3-modal">
-        <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container w3-teal w3-center w3-padding-32"> 
-            <span onclick="document.getElementById('ticketModal').style.display='none'" 
-        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-            <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-        </header>
-        <div class="w3-container">
-            <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-            <input class="w3-input w3-border" type="text" placeholder="How many?">
-            <p><label><i class="fa fa-user"></i> Send To</label></p>
-            <input class="w3-input w3-border" type="text" placeholder="Enter email">
-            <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-            <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-            <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-        </div>
-        </div>
-    </div>
-
-    <!-- The Contact Section -->
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-        <h2 class="w3-wide w3-center">CONTACT</h2>
-        <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-        <div class="w3-row w3-padding-32">
-        <div class="w3-col m6 w3-large w3-margin-bottom">
-            <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-            <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-        </div>
-        <div class="w3-col m6">
-            <form action="/action_page.php" target="_blank">
-            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                </div>
-                <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                </div>
-            </div>
-            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-            </form>
-        </div>
-        </div>
-    </div>
-    
-    <!-- End Page Content -->
-    </div>
-
-    <!-- Image of location/map -->
-    <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </footer>
 
     <script>
-    // Automatic Slideshow - change image every 4 seconds
-    var myIndex = 0;
-    carousel();
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "109730824090715");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
 
-    function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
-    }
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
 
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    var modal = document.getElementById('ticketModal');
-    window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-    }
     </script>
+      <div class="menu-wrap">
+        <nav class="menu navbar">
+          <div class="icon-list navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#video-area">Home</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#actu">Actualités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#canal">Nos productions</a>
+              </li>  
+               <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Les acteurs</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>                                               
+            </ul>
+          </div>
+        </nav> 
+        <button class="close-button" id="close-button"><i class="lnr lnr-cross"></i></button>
+      </div>      
+  	<!-- Header Section Start -->
 
-    </body>
+    <header id="video-area" data-stellar-background-ratio="0.5">    
+      <div id="block" data-vide-bg="video/video" data-vide-options="position: 70% 0%, resizing: true"></div>
+      <div class="fixed-top">
+          <div class="container">
+            <div class="logo-menu">
+              <a href="index.html" class="logo"><img src="img/icon/sarycom64.png" alt="logo">  </a> 
+              <a href="index.html">Français <img src="img/icon/france-flag-round-icon-16.png" alt="Français"></a> -   
+              <a href="homemg.html">Malagasy <img src="img/icon/madagascar-flag-round-icon-16.png" alt="Malagasy"> </a>
+              <button class="menu-button" id="open-button"><i class="lnr lnr-menu"></i></button>    
+            </div>           
+          </div>
+      </div>
+
+      <div class="overlay overlay-2"></div>      
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-10">
+            <div class="contents text-center">
+              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">"SIPA" votre nouvelle série inédite.</h1>
+              <p><a href="https://www.youtube.com/watch?v=8L3JCdPCG4o&list=PLUL_bfhPHKGkJiGIlwXaDv9kvm6Trh5cy" class="btn btn-warning wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"><i class="lnr lnr-screen"></i>Bande Annonce</a>
+              
+              <a href="https://tv.sarycom.fr" class="btn btn-outline-warning wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"><i class="lnr lnr-star"></i>Les Creations SRC</a><p>
+               <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Sipa: à ne pas rater sur la chaine Novegasy du bouquet numérique Canal+.</p>
+               <div class="social-icons wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.6s">
+              <ul>
+                <li class="facebook"><a href="https://www.facebook.com/SRCFims/"><i class="fa fa-facebook fa-inverse"></i></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/sary.comfilms/"><i class="fa fa-instagram fa-inverse"></i></a></li>
+                <li class="youtube"><a href="https://www.youtube.com/channel/UC0QMJYWWOAJbhZhCK1QSqbQ"><i class="fa fa-youtube fa-inverse"></i></a></li>
+                <li class="vimeo"><a href="https://tv.sarycom.fr"><i class="fa fa-vimeo fa-inverse"></i></a></li>
+                <li class="tiktok"><a href="https://www.tiktok.com/@sarycom.films"><i class="fab fa-tiktok fa-inverse"></i></a></li>
+              </ul>
+            </div> 
+               <a href="#actu"><img src="img/icon/scroll.gif" height="48" class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s"></a>
+          </div>
+        </div> 
+      </div>      
+    </header>
+    <!-- Header Section End --> 
+
+  <!-- Actualité Section -->
+   <section id="blog" class="section">
+      <!-- Container Starts -->
+      <div id="actu" class="container">
+           <h5 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Les dernières productions</h5>
+          <div class="row">
+
+            
+
+          <div class="col-lg-auto col-md-auto col-sm-6 col-xs-12 blog-item">
+            <!-- Blog Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-img">
+              <!-- <a href="single-post.html"> -->
+                  <img src="img/sipa2.jpg" alt="">
+                </a>                
+              </div>
+              <div class="blog-item-text"> 
+                <h3>
+                <a href="https://youtu.be/8L3JCdPCG4o">Sipa - La série (SRC Films 2022) </a><img src="img/icon/novegasy.png" alt="">
+                </h3>
+                <div class="meta-tags">
+
+                </div>
+                <p><a href="https://youtu.be/8L3JCdPCG4o" class="btn btn-warning btn-rm"><span class="lnr lnr-screen"></span> Bande Annonce</a><a href="https://youtu.be/uX9VzbdCFeY" class="btn btn-warning btn-rm"><span class="lnr lnr-screen"></span> Bande Originale</a> </p>
+                <p>Votre nouvelle série inédite de la rentrée, très "girly", diffusée sur la chaine Novegasy du bouquet numérique Canal+. </p>
+              </div>
+            </div>
+            <!-- Blog Item Wrapper Ends-->
+          </div>
+
+          <div class="col-lg-auto col-md-auto col-sm-6 col-xs-12 blog-item">
+            <!-- Blog Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.6s">
+              <div class="blog-item-img">
+               <!--  <a href="single-post.html"> -->
+                <img src="img/blog/osika.jpg" alt="">
+                </a>                
+              </div>
+              <div class="blog-item-text">    
+                <h3>
+                  <a href="https://www.youtube.com/watch?v=WIFK9AzKWZc&list=PLUL_bfhPHKGl_986KeJPAG0HvjoUVnesC&index=1">Osika - La série (SRC Films 2022) </a><img src="img/icon/novegasy.png" alt="">
+                </h3>
+                <div class="meta-tags">
+
+                </div>
+                <p><a href="https://www.youtube.com/watch?v=WIFK9AzKWZc&list=PLUL_bfhPHKGl_986KeJPAG0HvjoUVnesC&index=1" class="btn btn-warning btn-rm"><span class="lnr lnr-screen"></span> Bande Annonce</a> <a href="https://youtu.be/f-Ksg8N8XqE1" class="btn btn-warning btn-rm"><span class="lnr lnr-screen"></span> Bande Originale</a></p>
+                <p>La  série "Action Comédie" de Sarycom, diffusée en juin 2022 en exclusivité sur la chaine Novegasy (CANAL+). </p>
+            <!-- Blog Item Wrapper Ends-->
+             </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>    
+
+
+
+
+  <!-- Série Section -->
+    <section id="blog" class="section">
+      <!-- Container Starts -->
+      <div id="canal" class="container">
+        <div class="section-header">          
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">SRC FILMS</h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+          <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Nos productions</p>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 blog-item">
+            <!-- Blog Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-img">
+               <!--  <a href="single-post.html"> -->
+                  <img src="img/blog/iloainas1.png" alt="">
+                </a>                
+              </div>
+              <div class="blog-item-text">    
+                <h3>
+                  <a href="https://vimeo.com/557746277">Ilo Aina - La série (SRC Films 2021)</a><img src="img/icon/novegasy.png" alt="">
+                </h3>
+                <div class="meta-tags">
+
+                </div>
+                <a href="http://iloaina.sarycom.fr" class="btn btn-warning btn-rm"><span class="lnr lnr-screen"></span> Bande Annonce</a>
+                <a href="https://youtu.be/MemUjdht45c" class="btn btn-warning btn-rm"><span class="lnr lnr-music-note"></span> Bande Originale</a>
+                <a href="https://www.facebook.com/groups/148373813769074" class="btn btn-warning btn-rm">+<span class="lnr lnr-users"> Fans</span></a>
+                <!--<a href="https://www.facebook.com/SRCFims/" class="btn btn-warning btn-rm">J'aime <span class="lnr lnr-thumbs-up"></span></a>-->
+                <p>Ilo et Aina sont 2 jumelles, fruit d’un viol dans les quartiers très pauvres de Tana. Après une lourde décision, Arline a dû se séparer de Aina qui a eu plus de chance car elle a été adoptée par un couple issu des quartiers huppés menant un train de vie assez aisé. Ilo quant à elle, vivait avec sa mère dans la misère et a était contrainte d’arrêter très tôt ses études... Le destin a causé la rencontre inopinée des 2 soeurs et le commencement des problèmes.
+              </div>
+            </div>
+            <!-- Blog Item Wrapper Ends-->
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 blog-item">
+            <!-- Blog Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.6s">
+              <div class="blog-item-img">
+              <!-- <a href="single-post.html"> -->
+                  <img src="img/blog/anay_partie2.jpeg" alt="">
+                </a>                
+              </div>
+              <div class="blog-item-text"> 
+                <h3>
+                <a href="http://anay.sarycom.fr">Anay - La série (SRC Films 2021)</a><img src="img/icon/novegasy.png" alt="">
+                </h3>
+                <div class="meta-tags">
+                  <!--<span class="date"><i class="lnr lnr-calendar-full"></i>on Mar 23, 2018</span>
+                  <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span>-->
+                </div>
+                <a href="http://anay.sarycom.fr" class="btn btn-warning btn-rm"><span class="lnr lnr-screen"></span> Bande Annonce</a>
+                <a href="https://youtu.be/5wr_RS7UZL4" class="btn btn-warning btn-rm"><span class="lnr lnr-music-note"></span> Bande Originale</a>
+                <a href="https://www.facebook.com/groups/310235124087699" class="btn btn-warning btn-rm">+<span class="lnr lnr-users"> Fans</span></a>
+                <p>Anay est le fils unique d'une famille très riche à Antananarivo. Il enchaine plusieurs actes de délinquance et sa belle-mère le met à la porte. Elle l'accuse notamment d'avoir eu des relations amoureuses avec sa demi-soeur. Il se retrouve ainsi livré à lui-même...</p>
+              </div>
+            </div>
+            <!-- Blog Item Wrapper Ends-->
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 blog-item">
+            <!-- Blog Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.9s">
+              <div class="blog-item-img">
+                <!-- <a href="single-post.html"> -->
+                  <img src="img/blog/tanamania.png" alt="">
+                </a>                
+              </div>
+              <div class="blog-item-text"> 
+                <h3>
+                  <a href="https://vimeo.com/556419526">Tanamania - La série (SRC Films 2020)</a><img src="img/icon/novegasy.png" alt="">
+                </h3>
+                <div class="meta-tags">
+      
+                </div>
+                <a href="http://tanamania.sarycom.fr" class="btn btn-warning btn-rm"><span class="lnr lnr-screen"></span> Bande Annonce</a>
+                <a href="https://vimeo.com/557753923" class="btn btn-warning btn-rm"><span class="lnr lnr-music-note"></span> Bande Originale</a>
+                <p>Thaïna est une jeune fille issue d'une campagne reculée de Madagascar. Elle a été élevée par sa grand-mère et a déménagé à Antanarivo pour poursuivre ses études à l’université. Espérant vivre chez sa tante Sarah qui est sa seule famille, sa vie s’est transformée en un véritable calvaire après que cette dernière voulait sa disparition car elle est la seule héritière légale de l’empire familiale des Rajaona Thaïna. 
+              </div>
+            </div>
+            <!-- Blog Item Wrapper Ends-->
+          </div>
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 blog-item">
+            <!-- Blog Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="1.2s">
+              <div class="blog-item-img">
+              <!-- <a href="single-post.html"> -->
+                  <img src="img/blog/tanamaniamovie.png" alt="">
+                </a>                
+              </div>
+              <div class="blog-item-text"> 
+                <h3>
+                <a href="https://youtu.be/oIjHKT851Wo">Tanamania - Le film (SRC Films 2006)</a>
+                </h3>
+                <div class="meta-tags">
+
+                </div>
+                <a href="https://youtu.be/oIjHKT851Wo" class="btn btn-warning btn-rm"><span class="lnr lnr-screen"></span> Regarder gratuitement</a>
+                <p>Tanamania 3 est un long métrage réalisé en 2006. </p>
+                <p><img src="img/icon/youtube.png"></p>
+              </div>
+            </div>
+            <!-- Blog Item Wrapper Ends-->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  <!-- Events Section -->
+  <section id="blog" class="section">
+    <!-- Container Starts -->
+    <div id="canal" class="container">
+      <div class="section-header">          
+        <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">SRC EVENTS</h2>
+        <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+        <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Nos événements</p>
+      </div>
+        <div class="row">
+
+          
+
+        <div class="col-lg-auto col-md-auto col-sm-6 col-xs-12 blog-item">
+          <!-- Blog Item Starts -->
+          <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+            <div class="blog-item-img">
+            <!-- <a href="single-post.html"> -->
+                <img src="img/blog/ambondrona.jpg" alt="">
+              </a>                
+            </div>
+            <div class="blog-item-text"> 
+              <h3>
+              <a href="https://www.facebook.com/lc.ilohasina/photos/a.887100248017170/5354835321243618">Ambondrona (SRC Events 2022)</a>
+              </h3>
+              <div class="meta-tags">
+
+              </div>
+              <p><a href="https://www.facebook.com/permalink.php?story_fbid=pfbid026RAE82LZQqvDCk6h4hRPuuTgon5tAHWD6JyEUCYgdu67p6SPF7P2PHmCGdUSoicTl&id=113342617666564" class="btn btn-warning btn-rm"><span class="lnr lnr-plus-circle"></span> Infos</a> Retour sur le concert d'Ambondrona du 6 juin 2022, co-organisé avec le Lions Club Ilohasina et SRC Events.</p>
+            </div>
+          </div>
+          <!-- Blog Item Wrapper Ends-->
+        </div>
+
+        <div class="col-lg-auto col-md-auto col-sm-6 col-xs-12 blog-item">
+          <!-- Blog Item Starts -->
+          <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.6s">
+            <div class="blog-item-img">
+             <!--  <a href="single-post.html"> -->
+                <img src="img/blog/sat.jpg" alt="">
+              </a>                
+            </div>
+            <div class="blog-item-text">    
+              <h3>
+                <a href="https://youtu.be/bX6mQHkHTNI">Saturdate (SRC Events 2021)</a>
+              </h3>
+              <div class="meta-tags">
+
+              </div>
+              <p><a href="https://youtu.be/bX6mQHkHTNI" class="btn btn-warning btn-rm"><span class="lnr lnr-screen"></span> Infos</a> Retour sur l'évènement marquant de SRC Events: les fans ont pu discuter avec les acteurs des séries Ilo Aina, Anay, et Tanamania. </p>
+          <!-- Blog Item Wrapper Ends-->
+           </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>    
+
+
+<!-- Photos Sections -->
+    <section id="portfolios" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">SRC ICONS</h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+          <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Retrouvez toutes les photos et la biographie de nos actrices/acteurs</p>
+        </div>
+        <div class="row">          
+          <div class="col-md-12">
+            <!-- Portfolio Controller/Buttons -->
+            <div class="controls text-center wow fadeInUp" data-wow-delay=".6s">
+              <a class="control btn btn-common" data-filter="all">
+                Tous les acteurs 
+              </a>
+              <a class="control btn btn-common" data-filter=".iloaina">
+                Ilo Aina 
+              </a>
+              <a class="control btn btn-common" data-filter=".anay">
+                Anay
+              </a>
+              <a class="control btn btn-common" data-filter=".tanamania">
+                Tanamania 
+              </a>
+              <a class="control mixitup-control-active btn btn-common" data-filter=".top">
+                Aperçu 
+              </a>
+            </div>
+            <!-- Portfolio Controller/Buttons Ends-->          
+
+            <!-- Portfolio Recent Projects -->
+            <div id="portfolio" class="row wow fadeInUp" data-wow-delay="0.8s">
+              
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix iloaina top">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/iloaina_ilo.jpeg">
+                      <img src="img/portfolio/iloaina_ilo.jpeg" alt="" />  <i class="lnr lnr-plus-circle item-icon"><div>Ilo</div></i></a>
+                      <div class="contents text-center">Ilo Aina (Ilo)
+                      <p>RAHARIMENDRIKA Onja Salohy</p>
+                      <p>"Actrice, modèle photos, figurante, clip"</p>
+                      <p><a href="https://www.facebook.com/Ilo-jessica-104747881752961"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=MemUjdht45c&list=PLUL_bfhPHKGn1wXexd-kV5zEWLA2cxrj4&index=2"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://iloaina.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>
+                  </div>          
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix iloaina top">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/iloaina_aina.jpeg">
+                      <img src="img/portfolio/iloaina_aina.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Aina</div></i></a>
+                      <div class="contents text-center">Ilo Aina (Aina)
+                      <p>ARANDRIANTSALAMA NY HO AVY Milanto Mirindra</p>
+                      <p>"Maquilleuse, actrice, Tik-tokeuse, danseuse Na'Danse Madagascar"</p>
+                      <p><a href="https://www.facebook.com/minam.yi.9"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.instagram.com/milantomirindra/?hl=fr"><i class="fa fa-instagram fa-lg"></i></a>&emsp;
+                         <a href="https://www.tiktok.com/@mielantou?"><i class="fab fa-tiktok fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=MemUjdht45c&list=PLUL_bfhPHKGn1wXexd-kV5zEWLA2cxrj4&index=2"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://iloaina.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>
+                  </div>        
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix anay top">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/anay_anay.jpeg">
+                      <img src="img/portfolio/anay_anay.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Anay</div></i></a>
+                      <div class="contents text-center">Anay (Anay)
+                      <p>SOLOFONIAINA Nasandratra Andrianina</p>
+                      <p>"Acteur, figurant pub/clip, modèle photos (Mister Iscam 2013) (Mister talenta sy kanto 2014)"</p>
+                      <p><a href="https://www.facebook.com/nasandratra.andrianina"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.instagram.com/nasandratra_andrianina"><i class="fa fa-instagram fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=jhw5FVQwSks&list=PLUL_bfhPHKGnFVxEZhqU8jzILeog6TCo_&index=1"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://anay.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>
+                  </div>      
+                </div>
+              </div>
+
+              
+
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix anay">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/anay_andy.jpeg">
+                      <img src="img/portfolio/anay_andy.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Andy</div></i></a>
+                      <div class="contents text-center">Anay (Andy)
+                      <p>RANDRIANASOLO Tino</p>
+                      <p>"Acteur, choriste (Rossy)"</p>
+                      <p><a href="https://www.facebook.com/tino.onit.3979"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=jhw5FVQwSks&list=PLUL_bfhPHKGnFVxEZhqU8jzILeog6TCo_&index=1"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://anay.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>
+                  </div>            
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix anay">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/anay_bolida.jpeg">
+                      <img src="img/portfolio/anay_bolida.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Bolida</div></i></a>
+                      <div class="contents text-center">Anay (Bolida)
+                      <p>Thierry RAKOTOBE</p>
+                      <p><a href="https://www.facebook.com/thierryj.rakotobe"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.instagram.com/thierryjrakotobe"><i class="fa fa-instagram fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=jhw5FVQwSks&list=PLUL_bfhPHKGnFVxEZhqU8jzILeog6TCo_&index=1"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://anay.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>
+                  </div>    
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix anay">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/anay_karena.jpeg">
+                      <img src="img/portfolio/anay_karena.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Karena</div></i></a>
+                      <div class="contents text-center">Anay (Karena) - TANAMANIA (Sarah)
+                      <p>Regina FILOSSY</p>
+                      <p>"Maquilleuse, actrice, mannequin, modèle photos, figurante pub/clip"</p>
+                      <p><a href="https://www.facebook.com/regina.filossi"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.instagram.com/regina_filossi"><i class="fa fa-instagram fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=jhw5FVQwSks&list=PLUL_bfhPHKGnFVxEZhqU8jzILeog6TCo_&index=1"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://anay.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>   
+                  </div>               
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix anay">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/anay_louanne.jpeg">
+                      <img src="img/portfolio/anay_louanne.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Louane</div></i></a>
+                      <div class="contents text-center">Anay (Louane)
+                      <p>Oniniaina RAKOTOARISOA</p>
+                      <p>"Actrice, modèle photos, ex choriste Joseph D'af, figurante pub, présentatrice émission (2012)"</p>
+                      <p><a href="https://www.facebook.com/mathonyy"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=jhw5FVQwSks&list=PLUL_bfhPHKGnFVxEZhqU8jzILeog6TCo_&index=1"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://anay.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>   
+                  </div>           
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix anay">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/anay_miando.jpeg">
+                      <img src="img/portfolio/anay_miando.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Miando</div></i></a>
+                      <div class="contents text-center">Anay (Miando)
+                      <p>Kanto Henintsoa ANDRIAMAHERY</p>
+                      <p><a href="https://www.facebook.com/Kanto-Andriamahery-142797917912301"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.instagram.com/kanto_hnts"><i class="fa fa-instagram fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=jhw5FVQwSks&list=PLUL_bfhPHKGnFVxEZhqU8jzILeog6TCo_&index=1"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://anay.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>   
+                  </div>              
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix anay">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/anay_nadia.jpeg">
+                      <img src="img/portfolio/anay_nadia.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Nadia</div></i></a>
+                      <div class="contents text-center">Anay (Nadia) - TANAMANIA (Tahina)
+                      <p>Tiary Ny Aina NIHERIMAHENINA</p>
+                      <p>"Actrice, modèle photos, figurante, pub/clip"</p>
+                      <p><a href="https://www.facebook.com/ThainaTanamania20"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=jhw5FVQwSks&list=PLUL_bfhPHKGnFVxEZhqU8jzILeog6TCo_&index=1"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://anay.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>   
+                  </div>            
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix anay">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/anay_yalisoa.jpeg">
+                      <img src="img/portfolio/anay_yalisoa.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Yalisoa</div></i></a>
+                      <div class="contents text-center">Anay (Yalisoa)
+                      <p>Mbolamanalitiana Sarah koloina RASOANAIVO</p>
+                      <p>"Actrice, chanteuse Tana groupe, choriste Tovo J'hay"</p>
+                      <p><a href="https://www.facebook.com/sarah.koloina"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.instagram.com/sarah.koloina/"><i class="fa fa-instagram fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=jhw5FVQwSks&list=PLUL_bfhPHKGnFVxEZhqU8jzILeog6TCo_&index=1"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://anay.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>   
+                  </div>             
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix iloaina">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/iloaina_eva.jpeg">
+                      <img src="img/portfolio/iloaina_eva.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Eva</div></i></a>
+                      <div class="contents text-center">Ilo Aina (Eva)
+                      <p>Njara Michelle ANDRIAMBOLOLONA</p>
+                      <p><a href="https://www.facebook.com/njara.andriambololona.7"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.instagram.com/njara_andriambololona"><i class="fa fa-instagram fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=MemUjdht45c&list=PLUL_bfhPHKGn1wXexd-kV5zEWLA2cxrj4&index=2"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://iloaina.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>   
+                  </div>              
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix iloaina">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/iloaina_line.jpeg">
+                      <img src="img/portfolio/iloaina_line.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Line</div></i></a>
+                      <div class="contents text-center">Ilo Aina (Line)
+                      <p>Niry Aina Nandrasana RAZAFINDRAMIARINA</p>
+                      <p>"Actrice, Maquilleuse, hôtesse d'évènements"</p>
+                      <p><a href="https://www.facebook.com/niryainamakeup"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=MemUjdht45c&list=PLUL_bfhPHKGn1wXexd-kV5zEWLA2cxrj4&index=2"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://iloaina.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>   
+                  </div>             
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix iloaina tanamania">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/iloaina_pat.jpeg">
+                      <img src="img/portfolio/iloaina_pat.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Pat</div></i></a>
+                      <div class="contents text-center">Ilo Aina (Pat), TANAMANIA (Maya)
+                      <p>Miora Hasina Jelae ANDRIAMAHARO</p>
+                      <p>"Actrice, Danseuse Na'Danse Madagascar, Figurante clip, modèle photos"</p>
+                      <p><a href="https://www.facebook.com/adr.andriann"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=MemUjdht45c&list=PLUL_bfhPHKGn1wXexd-kV5zEWLA2cxrj4&index=2"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://iloaina.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>   
+                  </div>              
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix iloaina">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/iloaina_perety.jpeg">
+                      <img src="img/portfolio/iloaina_perety.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Perety</div></i></a>
+                      <div class="contents text-center">Ilo Aina (Perety)
+                      <p>Diary Famenontsoa RAHARIMALALA</p>
+                      <!--<p><a href="https://www.facebook.com/niryainamakeup"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.instagram.com/njara_andriambololona"><i class="fa fa-instagram fa-lg"></i></a><p>-->
+                         <p><a href="https://www.youtube.com/watch?v=MemUjdht45c&list=PLUL_bfhPHKGn1wXexd-kV5zEWLA2cxrj4&index=2"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://iloaina.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>   
+                  </div>           
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix iloaina">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/iloaina_rudi.jpeg">
+                      <img src="img/portfolio/iloaina_rudi.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Rudi</div></i></a>
+                      <div class="contents text-center">Ilo Aina (Rudi)
+                      <p>Loïc Hanitriniaina</p>
+                      <p><a href="https://www.facebook.com/loic.hanitriniaina"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=MemUjdht45c&list=PLUL_bfhPHKGn1wXexd-kV5zEWLA2cxrj4&index=2"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://iloaina.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>
+                  </div>             
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix iloaina">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/iloaina_soafara.jpeg">
+                      <img src="img/portfolio/iloaina_soafara.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Soafara</div></i></a>
+                      <div class="contents text-center">Ilo Aina (Soafara)
+                      <p>Mia</p>
+                      <p><a href="https://www.facebook.com/mi.riella.77"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=MemUjdht45c&list=PLUL_bfhPHKGn1wXexd-kV5zEWLA2cxrj4&index=2"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://iloaina.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>
+                  </div>             
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix iloaina">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/iloaina_tamby.jpeg">
+                      <img src="img/portfolio/iloaina_tamby.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Tamby</div></i></a>
+                      <div class="contents text-center">Ilo Aina (Tamby)
+                      <p>Fetratiana FANOMEZANJANAHARY</p>
+                      <p>"Acteur, modèle photos, mannequin, figurant clip"</p>
+                      <p><a href="https://www.facebook.com/Fetratiana-fanomezanjanahary-107865341246529"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.youtube.com/watch?v=MemUjdht45c&list=PLUL_bfhPHKGn1wXexd-kV5zEWLA2cxrj4&index=2"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://iloaina.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>
+                  </div>              
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix tanamania">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/tanamania_annah.jpeg">
+                      <img src="img/portfolio/tanamania_annah.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Annah</div></i></a>
+                      <div class="contents text-center">TANAMANIA (Annah)
+                      <p></p>
+                      <!--<p><a href="https://www.facebook.com/niryainamakeup"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.instagram.com/njara_andriambololona"><i class="fa fa-instagram fa-lg"></i></a><p>-->
+                          <p>
+                         <a href="https://www.youtube.com/watch?v=JRDO39cfhwk&list=PLUL_bfhPHKGmkw-edubua7_jFvCcr1k7z"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://tanamania.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>
+                  </div>         
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix tanamania">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/tanamania_jennifer.jpeg">
+                      <img src="img/portfolio/tanamania_jennifer.jpeg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"><div>Jennifer</div></i></a>
+                      <div class="contents text-center">TANAMANIA (Jennifer)
+                      <p></p>
+                      <!--<p><a href="https://www.facebook.com/niryainamakeup"><i class="fa fa-facebook-square fa-lg"></i></a>&emsp;
+                         <a href="https://www.instagram.com/njara_andriambololona"><i class="fa fa-instagram fa-lg"></i></a><p>-->
+                           <p>
+                         <a href="https://www.youtube.com/watch?v=JRDO39cfhwk&list=PLUL_bfhPHKGmkw-edubua7_jFvCcr1k7z"><i class="fa fa-youtube fa-lg"></i></a>&emsp;
+                         <a href="https://tanamania.sarycom.fr"><i class="fa fa-vimeo fa-lg"></i></a></p>
+                      </div>
+                  </div>            
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Container Ends -->
+    </section>
+    <!-- Portfolio Section Ends --> 
+
+    <!-- Questions Section -->
+    <section id="blog" class="section">
+    <!-- Container Starts -->
+    <div id="faq" class="container">
+      <div class="section-header">          
+        <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Foire aux questions</h2>
+        <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+      </div>
+
+<p class="text-center">
+  <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#serie" aria-expanded="false" aria-controls="collapseExample">
+    Comment regarder nos créations?
+  </button>
+</p>
+   
+<div class="collapse" id="serie">
+  <div class="card card-body">
+    <p><strong>Pour les séries Ilo Aina, Anay, et Tanamania 2.0</strong>, elles sont diffusées en exclusivité sur la chaine <a href="https://www.canalplusadvertising.com/fr/novegasy/">Novegasy</a>, disponible sur le bouquet Canal+ à Madagascar et à La Réunion.</p>
+    <p>&emsp; <a href="https://www.canalplus-madagascar.com"><img src="img/blog/canal.png" alt=""></a> &emsp;<a href="https://www.canalplusadvertising.com/fr/novegasy/"><img src="img/icon/novegasy.png" alt=""></a></p>    
+    <p><strong>Pour nos longs métrages</strong>, ils sont diffusés en Vidéo à la Demande sur la plateforme <a href="https://vimeo.com/search/ondemand?q=sarycom">Vimeo</a>. Il suffit d'effectuer le règlement par Carte Bancaire ou compte Paypal sur la Plateforme sécurisé<a href="https://vimeo.com/search/ondemand?q=sarycom"> Vimeo OnDemand</a>.</p>
+    <p>&emsp; <a href="http://tv.sarycom.fr"><img src="img/icon/vimeo.png" alt=""></a></p> 
+    <p>Certains de nos longs métrages sont également accessible gratuitement via notre chaine <a href="http://youtube.sarycom.fr">Youtube</a></p>
+    <p>&emsp; <a href="http://youtube.sarycom.fr"><img src="img/icon/youtube.png" alt=""></a></p>  
+  </div>
+</div>
+<p class="text-center">
+ <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#ba" aria-expanded="false" aria-controls="collapseExample">
+    Regarder les bandes annonces?
+  </button>
+</p>
+
+<div class="collapse" id="ba">
+  <div class="card card-body">
+    <p>Toutes nos bandes annonces, bandes originales, événements sont accessible gratuitement sur notre chaine <a href="http://youtube.sarycom.fr">Youtube</a></p>
+    <p>&emsp; <a href="http://youtube.sarycom.fr"><img src="img/icon/youtube.png" alt=""></a></p>
+  </div>
+</div>
+
+<p class="text-center">
+<button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#novecanal" aria-expanded="false" aria-controls="collapseExample">
+    Comment s'abonner à Canal+?
+  </button>
+</p>
+ 
+<div class="collapse" id="novecanal">
+  <div class="card card-body">
+     <p>Pour vous abonnez à Canal+ Madagascar:<a href="https://www.canalplus-madagascar.com"> Cliquez ici.</a></p>
+     <p>Pour vous abonnez à Canal+ La Réunion:<a href="https://www.canalplus-reunion.com/re/"> Cliquez ici.</a></p>
+  </div>
+</div>
+<p class="text-center">
+ <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#qui" aria-expanded="false" aria-controls="collapseExample">
+    Qui sommes-nous?
+  </button>
+</p>
+ 
+<div class="collapse" id="qui">
+  <div class="card card-body">
+    <p>SaryCom films est une société de production de Films, Long Métrage, et Séries Malgaches. Branche de Sarycom Group, regroupant SRC Films, SRC Events, SRC Icon (recrutements) et SRC Technology. Les branches SRC Films, Event, Icon sont basées à Antananarivo (Madagascar). La branche SRC Technologie est à Paris (France).</p> 
+</div>
+</div>
+<p class="text-center">
+ <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#more" aria-expanded="false" aria-controls="collapseExample">
+    D'autres questions?
+  </button>
+</p>
+<div class="collapse" id="more">
+  <div class="card card-body">
+    <p>Contactez-nous par via chat accessible sur la page du site internet ou par mail : <a href="mailto:contact@sarycom.fr">contact@sarycom.fr</a>.</p>
+  </div>
+</div>
+
+
+
+
+
+    </section>
+   
+    <!-- Footer Section Start -->
+    <footer>          
+      <div class="container">
+        <div id="whoareus" class="row">
+          <div class="col-md-12">
+            <div class="site-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s">
+              <p>SaryCom films est une société de production de Films, Long Métrage, et Séries Malgaches.</p>
+              <p>Copyright &copy; 2022 SaryCom Group. Tous droits réservés - Developed with <i class="fa-solid fa-heart-circle-check"></i> by <a rel="nofollow" href="https://www.fklein.me">fklein.me</a></p>
+            </div> 
+            <div class="social-icons wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.6s">
+              <ul>
+                <li class="facebook"><a href="https://www.facebook.com/SRCFims/"><i class="fa fa-facebook fa-inverse"></i></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/sary.comfilms/"><i class="fa fa-instagram fa-inverse"></i></a></li>
+                <li class="youtube"><a href="https://www.youtube.com/channel/UC0QMJYWWOAJbhZhCK1QSqbQ"><i class="fa fa-youtube fa-inverse"></i></a></li>
+                <li class="vimeo"><a href="https://tv.sarycom.fr"><i class="fa fa-vimeo fa-inverse"></i></a></li>
+                <li class="tiktok"><a href="https://www.tiktok.com/@sarycom.films"><i class="fab fa-tiktok fa-inverse"></i></a></li>
+              </ul>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End --> 
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lnr lnr-arrow-up"></i>
+    </a>
+
+    <div id="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>    
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/nivo-lightbox.js"></script>
+    <script src="js/owl.carousel.min.js"></script>    
+    <script src="js/jquery.stellar.min.js"></script>    
+    <script src="js/jquery.nav.js"></script>    
+    <script src="js/smooth-scroll.js"></script>    
+    <script src="js/smooth-on-scroll.js"></script>    
+    <script src="js/wow.js"></script>    
+    <script src="js/menu.js"></script>
+    <script src="js/jquery.vide.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>    
+    <script src="js/jquery.magnific-popup.min.js"></script>    
+    <script src="js/waypoints.min.js"></script>     
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+
+  
+
+    
+  </body>
 </html>
