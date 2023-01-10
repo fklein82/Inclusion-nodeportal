@@ -1,13 +1,13 @@
 apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
-  name: emoji-domain
+  name: emoji-portal-domain
   description: Everything related to Emojis
   links:
-    - url: https://start.spring.io/
-      title: Start Spring.io
-    - url: https://spring.io/
-      title: Spring.io
+    - url: https://nodejs.org/en/
+      title: Node.js
+    - url: https://nodejs.org/en/
+      title: Node.js
       icon: dashboard
   annotations:
     'backstage.io/techdocs-ref': dir:.
