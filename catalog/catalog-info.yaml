@@ -4,7 +4,7 @@ metadata:
   name: inclusion-node-portal
   description: FrontEnd for Inclusion App
   tags:
-    - app-accelerator
+    - inclusion
     - node
     - express
     - tanzu
