@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: inclusion
-  description: This is an application that promotes inclusion 
+  name: inclusion-portal
+  description: This is an application that promotes inclusion through a web portal
   annotations:
     'backstage.io/techdocs-ref': dir:.
 spec:
