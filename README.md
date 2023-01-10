@@ -1,4 +1,4 @@
-# Node Function
+# Node Inclusion Portal
 
 This repo contains a simple Node web Portal that can be deployed as a TAP workload.
 
