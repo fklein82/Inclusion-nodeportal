@@ -1,10 +1,10 @@
 accelerator:
   displayName: Inclusion Frontend
-  description: Frontend Portal Template for inclusion Backend
-  iconUrl: https://github.com/tsalm-pivotal/emoji-inclusion/raw/main/acclerator.png
+  description: Web Portal in Node.js using Express. 
+  iconUrl: https://github.com/fklein82/Inclusion-nodeportal/raw/main/acclerator.png
   tags:
-    - html
-    - php
+    - Node.js
+    - express
   options:
     - name: pkgName
       label: Package name
