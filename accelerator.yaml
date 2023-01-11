@@ -3,7 +3,7 @@ accelerator:
   description: Web Portal in Node.js using Express. 
   iconUrl: https://github.com/fklein82/Inclusion-nodeportal/raw/main/acclerator.png
   tags:
-    - Node.js
+    - nodejs
     - express
   options:
     - name: pkgName
