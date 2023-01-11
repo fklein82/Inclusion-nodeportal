@@ -1,13 +1,13 @@
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
-  name: database-postgres
-  description: Database to store emojis
+  name: inclusion-api
+  description: Backed for Emoji Generator
   tags:
-    - database
-    - postgres
+    - api
+    - backend
     - inclusion
-    - diversity
+    - emoji
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=inclusion'
     'backstage.io/techdocs-ref': dir:.
@@ -15,4 +15,4 @@ spec:
   type: service
   lifecycle: experimental
   owner: team-vmware-tanzu-se
-  system: emoji-world
+  system: emoji-portal

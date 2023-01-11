@@ -19,3 +19,5 @@ spec:
   lifecycle: experimental
   owner: team-vmware-tanzu-se
   system: emoji-portal
+  dependsOn:
+    - Resource:inclusion-api
