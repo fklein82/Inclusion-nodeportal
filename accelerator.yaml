@@ -1,0 +1,16 @@
+accelerator:
+  displayName: Inclusion Frontend
+  description: Frontend Portal Template for inclusion Backend
+  iconUrl: https://github.com/tsalm-pivotal/emoji-inclusion/raw/main/acclerator.png
+  tags:
+    - html
+    - php
+  options:
+    - name: pkgName
+      label: Package name
+      inputType: text
+      defaultValue: "com.example"
+      required: true
+engine:
+  merge:
+    - include: [ "**/*" ]
