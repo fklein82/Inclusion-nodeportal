@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+</head>
+<body>
+<script type="text/javascript">
+
+     fetch('http://inclusion-backend-api.dev.tanzu.fklein.me/api/v1/emojis')
+      .then(response => response.json())
+      .then(json => {
+        var radr = JSON.stringify(json)
+        document.getElementById('test').innerHTML = radr;
+      });
+
+</script>
+</body>
+</html>
