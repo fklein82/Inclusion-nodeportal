@@ -1,17 +1,17 @@
 <html>
-<head>
-<meta charset="UTF-8" />
-</head>
-<body>
-<script type="text/javascript">
-
-     fetch('http://inclusion-backend-api.dev.tanzu.fklein.me/api/v1/emojis')
-      .then(response => response.json())
-      .then(json => {
-        var radr = JSON.stringify(json)
-        document.getElementById('test').innerHTML = radr;
-      });
-
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Emojis</h1>
+    <script>
+      document.addEventListener("DOMContentLoaded", async () => {
+        const res = await fetch('http://inclusion-backend-api.dev.tanzu.fklein.me/api/v1/emojis');
+        const text = await res.text();
+        document.open();
+        document.write(text);
+        document.close();
+     });
+    </script>
+  </body>
 </html>
