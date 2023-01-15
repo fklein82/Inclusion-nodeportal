@@ -13,12 +13,12 @@ k8s_custom_deploy(
                " --yes >/dev/null" +
                " && kubectl get workload spring-sensors --namespace " + NAMESPACE + " -o yaml",
     delete_cmd="tanzu apps workload delete -f config/workload.yaml --namespace " + NAMESPACE + " --yes",
-    deps=['pom.xml', './target/classes'],
+    deps=['.'],
     container_selector='workload',
     live_update=[
-      sync('/express')
+      sync('/express','/workspace')
     ]
 )
 
 k8s_resource('inclusion-portal', port_forwards=["8080:8080"],
-            extra_pod_selectors=[{'serving.knative.dev/service': 'spring-sensors'}])
+            extra_pod_selectors=[{'serving.knative.dev/service': 'inclusion-nodeportal'}])
