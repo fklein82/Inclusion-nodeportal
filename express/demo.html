@@ -1,18 +1,19 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <h1>Emojis Generator</h1>
-    <div id="emoji" name="emoji"></div>
-    <script>
-      document.addEventListener("DOMContentLoaded", async () => {
-        const res = await fetch('http://inclusion-backend-api.dev.tanzu.fklein.me/api/v1/emojis');
-        const text = await res.text();
-        console.log(text);
-        $('#emoji').append('<p>' + text +' </p>')
-     });
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>Emojis Generator</h1><br>
+  <input type="button" value="Generate-me an Emoji" id="change" /><br>
+  <div id="emoji" style="font-size: 100px;"></div>
+  <script>
+    $('#change').on('click', function () {
+      $.getJSON('http://inclusion-backend-api.dev.tanzu.fklein.me/api/v1/emojis', function (text) {
+        $('#emoji').empty()
+        $('#emoji').append('<p>' + text + ' </p>')
+      });
+    })
+  </script>
+</body>
 </html>
