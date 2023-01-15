@@ -16,7 +16,7 @@ k8s_custom_deploy(
     deps=['.'],
     container_selector='workload',
     live_update=[
-      sync('/express','/workspace')
+      sync('/express','/workspace/BOOT-INF/')
     ]
 )
 
