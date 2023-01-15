@@ -4,16 +4,17 @@
   </head>
   <body>
     <h1>Emojis</h1>
-    <div id="emoji"></div>
+    <div id="emoji" name="emoji"></div>
     <script>
       document.addEventListener("DOMContentLoaded", async () => {
         const res = await fetch('http://inclusion-backend-api.dev.tanzu.fklein.me/api/v1/emojis');
         const text = await res.text();
-        document.open();
-        document.write(text);
-        document.close();
-        $('#emoji').append('<input type="text" class="form-control" value="' + text + '"  />')
+        // document.open();
+        // document.write(text);
+        // document.close();
+        console.log(text);
+        $('#emoji').append('<p>' + text +' </p>')
      });
     </script>
-  </body>
+  </body>
 </html>
