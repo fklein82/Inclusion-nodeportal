@@ -4,15 +4,12 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>Emojis</h1>
+    <h1>Emojis Generator</h1>
     <div id="emoji" name="emoji"></div>
     <script>
       document.addEventListener("DOMContentLoaded", async () => {
         const res = await fetch('http://inclusion-backend-api.dev.tanzu.fklein.me/api/v1/emojis');
         const text = await res.text();
-        // document.open();
-        // document.write(text);
-        // document.close();
         console.log(text);
         $('#emoji').append('<p>' + text +' </p>')
      });
