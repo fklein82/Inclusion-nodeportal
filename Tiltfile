@@ -13,7 +13,7 @@ k8s_custom_deploy(
                " --yes >/dev/null" +
                " && kubectl get workload inclusion-frontend-web --namespace " + NAMESPACE + " -o yaml",
     delete_cmd="tanzu apps workload delete -f config/workload.yaml --namespace " + NAMESPACE + " --yes",
-    deps=['.'],
+    deps=['./node_modules/'],
     container_selector='workload',
     live_update=[
       sync('/express','/workspace')
