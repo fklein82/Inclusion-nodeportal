@@ -4,6 +4,7 @@
   </head>
   <body>
     <h1>Emojis</h1>
+    <div id="emoji"></div>
     <script>
       document.addEventListener("DOMContentLoaded", async () => {
         const res = await fetch('http://inclusion-backend-api.dev.tanzu.fklein.me/api/v1/emojis');
@@ -11,6 +12,7 @@
         document.open();
         document.write(text);
         document.close();
+        $('#emoji').append('<input type="text" class="form-control" value="' + text + '"  />')
      });
     </script>
   </body>
