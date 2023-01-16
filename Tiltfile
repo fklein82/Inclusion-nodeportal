@@ -1,8 +1,8 @@
 allow_k8s_contexts('tap-demo1-3')
 
 SOURCE_IMAGE = os.getenv("SOURCE_IMAGE")
-LOCAL_PATH = '.'
-NAMESPACE = "dev"
+LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
+NAMESPACE = os.getenv("NAMESPACE", default='dev')
 
 k8s_custom_deploy(
     'inclusion-frontend-web',

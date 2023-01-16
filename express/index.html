@@ -26,6 +26,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+ 
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
 
 </head>
@@ -132,18 +135,22 @@
         <div class="section-title">
           <h2 data-aos="fade-in">Emojis Generator</h2>
           <p data-aos="fade-in">Application to generate some cools Emojis.</p>
-        </br>
-        </br>
-          <p>
-            <iframe id="inlineFrameExample"
-                  title="Inline Frame Example"
-                  width="100%"
-                  height="300"
-                  scrolling="no" 
-                  frameborder="0"
-                  src="http://inclusion-backend-api.dev.tanzu.fklein.me">
-            </iframe>
-          </p>
+        <br>
+        
+     <!-- ======= API Call section ======= -->
+
+     <!-- HTML !-->
+
+     <input class="button-87" type="button" value="Generate Emojis" id="change"><br>
+       <div id="emoji" style="font-size: 100px;"></div>
+        <script>
+          $('#change').on('click', function () {
+          $.getJSON('http://inclusion-backend-api.dev.tanzu.fklein.me/api/v1/emojis', function (text) {
+          $('#emoji').empty()
+          $('#emoji').append(text)
+            });
+          })
+        </script>
       </div>
     </section><!-- End About Section -->
 
@@ -154,7 +161,7 @@
 
         <div class="section-title">
           <h2 data-aos="fade-in">Features</h2>
-          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p data-aos="fade-in">An emoji is a pictogram, logogram, ideogram or smiley embedded in text and used in electronic messages and web pages. </p>
         </div>
 
         <div class="row content">
@@ -162,14 +169,13 @@
             <img src="assets/img/features-1.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-4" data-aos="fade-left">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <h3>The primary function of emoji is:</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              to fill in emotional cues otherwise missing from typed conversation.[2] Examples of emoji are 😂, 😃, 🧘🏻‍♂️, 🌍, 🌦️, 🥖, 🚗, 📱, 🎉, ❤️, 🍆, 🍑 and 🏁.
             </p>
             <ul>
-              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check"></i> They are much like emoticons.</li>
+              <li><i class="bi bi-check"></i> Except emoji are pictures rather than typographic approximations.</li>
             </ul>
           </div>
         </div>
@@ -179,15 +185,12 @@
             <img src="assets/img/features-2.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-            <h3>Corporis temporibus maiores provident</h3>
+            <h3>The term "emoji" in the strict sense refers to </h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              <ul>
+              <li><i class="bi bi-check"></i> such pictures which can be represented as encoded characters.</li>
+              <li><i class="bi bi-check"></i>but it is sometimes applied to messaging stickers by extension.</li>
+              </ul>
             </p>
           </div>
         </div>
@@ -197,12 +200,13 @@
             <img src="assets/img/features-3.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5" data-aos="fade-left">
-            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+            <h3>Originally meaning pictograph</h3>
+            <p>The word emoji comes from Japanese e (絵, 'picture') + moji (文字, 'character'); the resemblance to the English words emotion and emoticon is purely coincidental.[4] The ISO 15924 script code for emoji is Zsye.</p>
             <ul>
-              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+              <li><i class="bi bi-check"></i> Originating on Japanese mobile phones in 1997.</li>
+              <li><i class="bi bi-check"></i> emoji became increasingly popular worldwide in the 2010s after being added to several mobile operating systems.</li>
+              <li><i class="bi bi-check"></i> They are now considered to be a large part of popular culture in the West and around the world.</li>
+              <li><i class="bi bi-check"></i> In 2015, Oxford Dictionaries named the Face with Tears of Joy emoji (😂) the word of the year.</li>
             </ul>
           </div>
         </div>
@@ -212,15 +216,12 @@
             <img src="assets/img/features-4.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+            <h3>History</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Evolution from emoticons (1990s).
             </p>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              The emoji was predated by the emoticon,[12] a concept implemented in 1982 by computer scientist Scott Fahlman when he suggested text-based symbols such as :-) and :-( could be used to replace language.[13] Theories about language replacement can be traced back to the 1960s, when Russian novelist and professor Vladimir Nabokov stated in an interview with The New York Times: "I often think there should exist a special typographical sign for a smile — some sort of concave mark, a supine round bracket."[14] It did not become a mainstream concept until the 1990s when Japanese, American and European companies began developing Fahlman's idea.[15][16] Mary Kalantzis and Bill Cope point out that similar symbology was incorporated by Bruce Parello, a student at the University of Illinois, into PLATO IV, the first e-learning system, in 1972.[17][18] The PLATO system was not considered mainstream, and therefore Parello's pictograms were only used by a small number of people.[19] Scott Fahlman's emoticons importantly used common alphabet symbols, and aimed to replace language/text to express emotion, and for that reason are seen as the actual origin of emoticons.
             </p>
           </div>
         </div>
@@ -236,15 +237,15 @@
 
         <div class="section-title">
           <h2 data-aos="fade-in">Team</h2>
-          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p data-aos="fade-in">Product Team</p>
         </div>
 
         <div class="row">
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up">
               <div class="pic"><img src="assets/img/team/team-1.jpg" alt=""></div>
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
+              <h4>Frédéric KLEIN</h4>
+              <span>Developer</span>
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -257,8 +258,8 @@
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="pic"><img src="assets/img/team/team-2.jpg" alt=""></div>
-              <h4>Sarah Jhinson</h4>
-              <span>Product Manager</span>
+              <h4>Alexandre Roman</h4>
+              <span>Solution Engineer</span>
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -271,7 +272,7 @@
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="pic"><img src="assets/img/team/team-3.jpg" alt=""></div>
-              <h4>William Anderson</h4>
+              <h4>Erwan Bornier</h4>
               <span>CTO</span>
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
@@ -285,8 +286,8 @@
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="pic"><img src="assets/img/team/team-4.jpg" alt=""></div>
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
+              <h4>Julien Kolaric</h4>
+              <span>DevOps</span>
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
