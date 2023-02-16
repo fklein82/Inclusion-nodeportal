@@ -20,4 +20,4 @@ spec:
   owner: team-vmware-tanzu-se
   system: emoji-portal
   dependsOn:
-    - Resource:inclusion-api
+    - Resource:api-backend
