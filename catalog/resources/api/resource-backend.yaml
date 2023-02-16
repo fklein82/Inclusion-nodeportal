@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
-  name: inclusion
-  description: Backed for Emoji Generator
+  name: api-backend
+  description: APi Backend for Emoji Generator
   tags:
     - api
     - backend
