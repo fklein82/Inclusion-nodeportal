@@ -145,7 +145,7 @@
        <div id="emoji" style="font-size: 100px;"></div>
         <script>
           $('#change').on('click', function () {
-          $.getJSON('https://inclusion-backend-api.default.tap.aks.fklein.me/api/v1/emojis', function (text) {
+          $.getJSON('http://inclusion-backend-api.default.svc/api/v1/emojis', function (text) {
           $('#emoji').empty()
           $('#emoji').append(text)
             });
